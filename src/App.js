@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import HeaderComp from './components/header-component/header-component'
+import FooterComp from './components/footer-component/footer-component'
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,7 @@ function App() {
           Welcome to my site!!!
         </a>
       </header>
+      <FooterComp></FooterComp>
     </div>
   );
 }
