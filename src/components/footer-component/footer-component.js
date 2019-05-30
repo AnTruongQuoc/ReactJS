@@ -7,7 +7,7 @@ class FooterComp extends React.Component {
         return (
             <div className='main-footer'> 
                 <footer>
-                    <p>Copyright by Quoc An 2019</p>
+                    <p className='copyright'>Copyright by Quoc An 2019</p>
                 </footer>
             </div>
         )

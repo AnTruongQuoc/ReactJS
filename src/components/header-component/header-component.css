@@ -5,26 +5,28 @@
     height: 100px;
     color: white;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    
 }
 .header-logo{
     position: absolute;
-    left: 3vmin;
-    top: 2vmin;
+    left: 21px;
+    top: 15px;
 }
 .h1-head{
     position: absolute;
-    left: 17vmin;
-    top: -1vmin;
+    margin: 0px;
+    left: 119px;
+    top: 20px;
     font-size: 40px;
 }
 .nav{
     list-style: none;
     position: absolute;
-    top: 2vmin;
+    top: 20px;
     right: 0px;
-    padding-right: 50px;
-    font-size: 22px;
+    padding-right: 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 .nav li {
     display: inline;
@@ -32,7 +34,7 @@
 }
 .header-logo {
     animation: header-logo-spin infinite 20s linear;
-    height: 10vmin;
+    height: 70px;
     pointer-events: none;
   }
  
@@ -61,7 +63,22 @@
       color: #3498db;
   }
 
-  
+.sign-in{
+    background-color: #3498db;
+    color: white; 
+    border-radius: 30px;
+    padding: 6px 20px 6px 20px;
+    box-shadow: 1px 1px 2px black;
+}
+
+.sign-in:hover {
+    background-color: #1e90ff;
+    box-shadow: 0px 0px 0px black;
+}
+.sign-in:visited:hover, .sign-in:link:hover{
+    background-color: #1e90ff;
+    box-shadow: 0px 0px 0px black;
+}
    
  @keyframes header-logo-spin {
     from {
