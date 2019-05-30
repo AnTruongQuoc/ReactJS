@@ -11,8 +11,8 @@ class HeaderComp extends React.Component {
                     <li><a href='/home' className='home'>Home</a></li>
                     <li><a href='/products' className='prod'>Products</a></li>
                     <li><a href='/farms' className='farms'>Farms</a></li>
-                    <li className='news'>News</li>
-                    <li className='contact'>Contact</li>
+                    <li><a href='/news' className='news'>News</a></li>
+                    <li><a href='/contact' className='contact'>Contact</a></li>
                 </ul>
             </div>
         )

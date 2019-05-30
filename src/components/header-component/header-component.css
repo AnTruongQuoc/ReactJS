@@ -4,25 +4,27 @@
     background:#282c34;
     height: 100px;
     color: white;
-    font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 .header-logo{
     position: absolute;
-    left: 0px;
+    left: 3vmin;
+    top: 2vmin;
 }
 .h1-head{
     position: absolute;
-    left: 130px;
-    top: -20px;
+    left: 17vmin;
+    top: -1vmin;
+    font-size: 40px;
 }
 .nav{
     list-style: none;
     position: absolute;
-    top: 5px;
+    top: 2vmin;
     right: 0px;
     padding-right: 50px;
+    font-size: 22px;
 }
 .nav li {
     display: inline;
@@ -34,14 +36,32 @@
     pointer-events: none;
   }
  
-  .farms:hover{
+  .farms:hover, .home:hover, .prod:hover,
+  .news:hover, .contact:hover
+  {
       color: #3498db;
       font-style: bold;
   }
  
-  .farms:visited{
-      color: none;
+  .farms:visited, .farms:link, 
+  .home:visited, .home:link,
+  .prod:visited, .prod:link, 
+  .news:visited, .news:link,
+  .contact:visited, .contact:link
+  {
+      color: white;
   }
+
+  .farms:visited:hover, .farms:link:hover, 
+  .home:visited:hover, .home:link:hover,
+  .prod:visited:hover, .prod:link:hover,
+  .news:visited:hover, .news:link:hover,
+  .contact:visited:hover, .contact:link:hover
+  {
+      color: #3498db;
+  }
+
+  
    
  @keyframes header-logo-spin {
     from {
