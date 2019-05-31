@@ -1,6 +1,9 @@
 import React from 'react'
 import './body-component.css'
 import bg from '../../assets/images/ricepaddies.png'
+import draflow from '../../assets/images/darkgreen.png'
+import flower from '../../assets/images/flower.png'
+import blue from '../../assets/images/blue.png'
 class BodyComp extends React.Component {
     render() {
         return (
@@ -26,10 +29,25 @@ class BodyComp extends React.Component {
                         <h1 className='lnews-text'> latest news</h1>
                         <div className='lnews-ul'></div>
                         <div className='news-box'>
-                            <div className='news-box-1'></div>
-                            <div className='news-box-2'></div>
-                            <div className='news-box-3'></div>
+                            <div className='news-box-1'>
+                                <img src={draflow} className='image1'></img>
+                                <h1 className='title-1'>New Title 1</h1>
+                                <p className='text-1'>"Write something here."</p>
+                            </div>
+                            <div className='news-box-2'>
+                                <img src={flower} className='image1'></img>
+                                <h1 className='title-1'>New Title 2</h1>
+                                <p className='text-1'>"Write something here."</p>
+                            </div>
+                            <div className='news-box-3'>
+                                <img src={blue} className='image1'></img>
+                                <h1 className='title-1'>New Title 3</h1>
+                                <p className='text-1'>"Write something here."</p>
+                            </div>
                         </div>
+                </div>
+                <div className='subpart'>
+                    
                 </div>
             </div>
         )
