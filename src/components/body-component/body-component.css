@@ -183,3 +183,31 @@
     height: 800px;
     background-color: white;
 }
+
+.subpart ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.test-pos {
+    width: 80%;
+    margin: auto;
+}
+li.test{
+   
+    width: 30%;
+    display: inline-block;
+    
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin: auto;
+    padding: 20px 0 20px 0;
+    cursor: pointer;
+}
+li.test {
+    background-color: whitesmoke;  
+    float: left;      
+}
+
+

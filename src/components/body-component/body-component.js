@@ -5,6 +5,41 @@ import draflow from '../../assets/images/darkgreen.png'
 import flower from '../../assets/images/flower.png'
 import blue from '../../assets/images/blue.png'
 class BodyComp extends React.Component {
+    constructor() {
+        super() //Bat buoc
+        this.state = {
+            data: [
+                {
+                    name: 'An'
+                },
+                {
+                    name: 'Hoang'
+                },
+                {
+                    name: 'Uyen'
+                },
+                {
+                    name: 'Hanh'
+                },
+                {
+                    name: 'Truc'
+                },
+                {
+                    name: 'Mai'
+                },
+                {
+                    name: 'Vinh'
+                },
+                {
+                    name: 'Phuong'
+                },
+                {
+                    name: 'Son'
+                },
+            ]
+        }
+        console.log(this.state.data)
+    }
     render() {
         return (
             <div className='body'>
@@ -47,7 +82,20 @@ class BodyComp extends React.Component {
                         </div>
                 </div>
                 <div className='subpart'>
-                    
+                    <div className='test-pos'>
+                    <ul>
+                        {
+                            this.state.data.map((item, index) => {                         
+                                return(
+                                <li className='test'>
+                                    <span class='item-title'>Name: </span>
+                                    <span class='item-name'>{item.name} </span>
+                                </li>
+                                )
+                        })   
+                    }
+                    </ul>
+                    </div>
                 </div>
             </div>
         )
