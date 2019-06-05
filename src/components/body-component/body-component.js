@@ -4,9 +4,18 @@ import bg from '../../assets/images/ricepaddies.png'
 import draflow from '../../assets/images/darkgreen.png'
 import flower from '../../assets/images/flower.png'
 import blue from '../../assets/images/blue.png'
+import Button from 'react-bootstrap/Button'
+import Card from 'react-bootstrap/Card'
+import CardGroup from 'react-bootstrap/CardGroup'
+import Cookies from  'universal-cookie'
+
 class BodyComp extends React.Component {
     constructor() {
         super() //Bat buoc
+            const cookies= new Cookies();
+            cookies.set('myCat', 'AnAn', {path: '/'});
+            console.log(cookies.get('isLogin')); //Pacman
+
         this.state = {
             data: [
                 {
@@ -43,6 +52,24 @@ class BodyComp extends React.Component {
     render() {
         return (
             <div className='body'>
+            <script src="https://unpkg.com/react/umd/react.production.js" crossorigin />
+
+            <script
+                 src="https://unpkg.com/react-dom/umd/react-dom.production.js"
+            crossorigin
+            />
+
+            <script
+                src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+             crossorigin
+            />
+
+            <script>var Alert = ReactBootstrap.Alert;</script>
+            <script src="holder.js"></script>
+
+
+
+
                 <div className='bg-top'>
                     <div className='bg-top-text'>
                         <h1 className='rice'>Rice</h1>
@@ -83,19 +110,31 @@ class BodyComp extends React.Component {
                 </div>
                 <div className='subpart'>
                     <div className='test-pos'>
-                    <ul>
+                    <CardGroup>
                         {
                             this.state.data.map((item, index) => {                         
                                 return(
-                                <li className='test'>
-                                    <span class='item-title'>Name: </span>
-                                    <span class='item-name'>{item.name} </span>
-                                </li>
+                                
+                                
+                    
+                                <Card style={{width: '18rem'}} className='text-center'>
+                                <Card.Img variant="top" src="holder.js/100x180" />
+                                <Card.Body>
+                                <Card.Title class='item-title'>{item.name}</Card.Title>
+                                <Card.Text>
+                                    Some quick text here. Something that you think it's crazy.
+                                </Card.Text>
+                                <Button variant="primary" class='item-name'> Button</Button>
+                                </Card.Body>
+                                </Card>
+                        
                                 )
-                        })   
-                    }
-                    </ul>
+                            })   
+                        }
+                    </CardGroup>
                     </div>
+
+                    
                 </div>
             </div>
         )
