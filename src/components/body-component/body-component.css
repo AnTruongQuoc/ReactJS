@@ -13,18 +13,20 @@
     position: absolute;
     z-index: 1;
     font-size: 50px;
-    left:50px;
+    left: 50px;
     top: 100px;
 }
 
 .rice{
     margin: 0;
     color: #047585;
+    font-size: 50px;
 }
 
 .paddy{
     margin: 0;
     color: #99ced2;
+    font-size: 50px;
 }
 
 .vn{

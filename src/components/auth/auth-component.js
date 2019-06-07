@@ -14,7 +14,7 @@ class Auth extends React.Component {
     }
 
     renderRedirect() {
-        if (this.state.logined == true) {
+        if (this.state.logined !== true) {
             return this.props.orRender
         }
         else {

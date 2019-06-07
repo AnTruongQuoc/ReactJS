@@ -1,7 +1,7 @@
 import React from 'react'
-import HeaderComp from '../../components/header-component/header-component'
 
-class LoginComp extends React.Component {
+
+class LoginPage extends React.Component {
     render () {
         return (
             <div className='login'>
@@ -11,4 +11,4 @@ class LoginComp extends React.Component {
     }
 }
 
-export default LoginComp
+export default LoginPage

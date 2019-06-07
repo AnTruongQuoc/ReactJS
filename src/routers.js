@@ -15,10 +15,11 @@ const MainRouter = () => (
                     }> </Auth>
                 )
             }></Route>
-            <Route path='/' component={HomePage}></Route>
+            
             <Route path='/products' component='{ProductsPage}'></Route>
             <Route path='/farms' component='{FarmsPage}'></Route>
             <Route path='/login' component={LoginPage}></Route>
+            <Route path='/home' componet={HomePage}></Route>
         </Switch>
     </main>
 )

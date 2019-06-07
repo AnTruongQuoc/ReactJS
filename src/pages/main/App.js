@@ -5,17 +5,15 @@ import HeaderComp from '../../components/header-component/header-component'
 import FooterComp from '../../components/footer-component/footer-component'
 import MainRouter from '../../routers';
 import BodyComp from '../../components/body-component/body-component';
+import HomePage from '../home/home';
 
 
 
 function App() {
   return (
     <div className="App">
-        <MainRouter></MainRouter>
-       <HeaderComp></HeaderComp>
-       <BodyComp></BodyComp>
-       <FooterComp></FooterComp>
-      
+       <MainRouter></MainRouter>
+       <HomePage></HomePage>
     </div>
   );
 }
