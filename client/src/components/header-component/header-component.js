@@ -13,7 +13,7 @@ class HeaderComp extends React.Component {
                     <li><a href='/farms' className='farms'>Farms</a></li>
                     <li><a href='/news' className='news'>News</a></li>
                     <li><a href='/contact' className='contact'>Contact</a></li>
-                    <li><a href='/sign-in' className='sign-in'>Sign In</a></li>
+                    <li><a href='/login' className='sign-in'>Sign In</a></li>
                 </ul>
             </div>
         )
