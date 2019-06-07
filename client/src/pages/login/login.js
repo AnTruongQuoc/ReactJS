@@ -4,9 +4,25 @@ import FooterComp from '../../components/footer-component/footer-component'
 import MainRouter from '../../routers';
 import BodyComp from '../../components/body-component/body-component';
 import IMGlogin from '../../assets/images/salad.jpg'
+const axios = require('axios');
 
 class LoginPage extends React.Component {
-    render () {
+    componentDidMount() {
+        axios.get('http://localhost:4000/api/hello')
+            .then(function (response) {
+                // handle success
+                console.log(response);
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
+            .finally(function () {
+                // always executed
+            });
+
+    }
+    render() {
         return (
             <React.Fragment>
                 <HeaderComp></HeaderComp>
@@ -19,8 +35,8 @@ class LoginPage extends React.Component {
                         <br></br>
                         <br></br>
                         <input type="submit" value="Login" className='lg-btn'></input>
-                    </form> 
-                    <img src={IMGlogin} className='img-lg'></img>       
+                    </form>
+                    <img src={IMGlogin} className='img-lg'></img>
                 </div>
                 <FooterComp></FooterComp>
             </React.Fragment>
