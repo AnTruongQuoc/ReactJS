@@ -12,13 +12,13 @@ class LoginPage extends React.Component {
     constructor() {
         super()
         this.state = {
-            response: 'Something'
+            response: 'something'
         }
 
     }
     componentDidMount() {
         let self = this
-        axios.get('http://localhost:4000/api/hello')
+        axios.get('/api/hello')
             .then(function (response) {
                 // handle success
                 console.log(response);
@@ -59,9 +59,9 @@ class LoginPage extends React.Component {
                 />
 
                 <script>var Alert = ReactBootstrap.Alert;</script>
-                <div class="w-100">
+                <div className="container">
                     <div class="w-50 d-inline-block">
-                        <div class="w-25 p-2">
+                        <div class="row align-items-center">
                             <Form>
                                 <Form.Group controlId="formBasicEmail">
                                     <Form.Label>Email address</Form.Label>
@@ -88,6 +88,8 @@ class LoginPage extends React.Component {
                         <img src={IMGlogin} alt='Salad'></img>
                     </div>
                 </div>
+                
+                
                 <FooterComp></FooterComp>
             </React.Fragment>
         )

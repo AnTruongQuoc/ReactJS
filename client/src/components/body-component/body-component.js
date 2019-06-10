@@ -65,7 +65,7 @@ class BodyComp extends React.Component {
                 />
 
                 <script>var Alert = ReactBootstrap.Alert;</script>
-                <script src="holder.js"></script>
+               
 
                 <div className='bg-top'>
                     <div className='bg-top-text'>
@@ -115,7 +115,7 @@ class BodyComp extends React.Component {
 
 
                                         <Card style={{ width: '18rem' }} className='text-center'>
-                                            <Card.Img variant="top" src="holder.js/100x180" />
+                                            <Card.Img variant="top" src="#" />
                                             <Card.Body>
                                                 <Card.Title class='item-title'>{item.name}</Card.Title>
                                                 <Card.Text>
