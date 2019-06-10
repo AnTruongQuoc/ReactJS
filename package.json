@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/AnTruongQuoc/ReactJS#readme",
   "dependencies": {
-    "concurrently": "^4.1.0"
+    "concurrently": "^4.1.0",
+    "package.json": "^2.0.1"
   }
 }

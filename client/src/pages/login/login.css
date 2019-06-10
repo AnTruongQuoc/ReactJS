@@ -1,6 +1,6 @@
 .login {
-    overflow: auto;
-    width: 100%;
+    
+    width: 50%;
     margin: 0;
     padding: 0;
 }
@@ -17,8 +17,3 @@
     margin: 0;
     padding: 0;
 }
-@media screen and (max-width: 800px) {
-    .lg-form .img-lg {
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    }
-  }
