@@ -20,7 +20,29 @@ class FarmsPage extends React.Component {
                 console.log(response);
                 let els = response.data.farms.map((key, index) => {
                     return (
-                        <li key={index}>{key.id} - {key.name} - {key.address} - {key.product_id} - {key.owner} - {key.phone}</li>
+                        <React.Fragment>
+                            
+                            <tr>
+                                <td className ='farms'>
+                                    {key.id}
+                                </td>
+                                <td className ='farms'>
+                                    {key.name}
+                                </td>
+                                <td className ='farms'>
+                                    {key.address}
+                                </td>
+                                <td className ='farms'>
+                                    {key.product_id}
+                                </td>
+                                <td className ='farms'>
+                                    {key.owner}
+                                </td>
+                                <td className ='farms'>
+                                    {key.phone}
+                                </td>
+                            </tr>
+                        </React.Fragment>
                     )
                 })
                 self.setState({
